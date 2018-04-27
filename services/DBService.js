@@ -3,11 +3,15 @@ const mysql = require('mysql');
 var connection;
 
 const dbConfig = {
+	// for mac
 	host: '192.168.64.2', // you need to provide your xampp ip (see the image)
+	
+	// for windows
 	// host: 'localhost',
-	user: 'admin',
-	password: 'admin'
-	// database: 'test'
+
+	user: 'admin', // your username
+	password: 'admin', // user password
+	database: 'my_db'  // optional
 }
 
 const connectDB = () => {
