@@ -3,7 +3,7 @@ const mysql = require('mysql');
 var connection;
 
 const dbConfig = {
-	host: '192.168.62.2',
+	host: '192.168.64.2',
 	// host: 'localhost',
 	user: 'admin',
 	password: 'admin'
@@ -21,9 +21,6 @@ const connectDB = () => {
 		
 		console.log('connected as id ' + connection.threadId);
 	}
-
-	// var pool  = mysql.createPool(dbConfig);   
-	// pool.getConnection(printStatus);
 
 	connection = mysql.createConnection(dbConfig);
 	// console.log(connection)
